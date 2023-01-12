@@ -58,6 +58,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;  
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 /* ----- Top Line ----- */
 
@@ -122,15 +126,23 @@ body {
 /* ----- Hero ----- */
 
 .hero {
+  text-align: center;
+}
+.overlay {
+  max-width: 1440px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 188px;
   padding-bottom: 188px;
-  
-  background-image: url('../images/hero-background.jpg');
-  background-color: rgba(46, 47, 66, 0.7);
+
+  background-image: linear-gradient(to right,
+  rgba(46, 47, 66, 0.7)),
+  url(../images/hero-background.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
-
-  text-align: center;
+  background-size: cover;
 }
 .hero-title {
   width: 494px;
@@ -157,8 +169,7 @@ body {
 /* ----- Features ----- */
 
 .features {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 .visually-hidden {
   position: absolute;
@@ -199,8 +210,6 @@ body {
 /* ----- Occupation ----- */
 
 .occupation {
-  padding-top: 60px;
-  padding-bottom: 120px;
   text-align: center;
 }
 .occupation-title {
@@ -218,9 +227,6 @@ body {
 /* ----- Team ----- */
 
 .team {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  
   background-color: #f4f4fd;
   text-align: center;
 }
