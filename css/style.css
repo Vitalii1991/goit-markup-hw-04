@@ -1,13 +1,11 @@
 /* основной цвет текста #434455 */
 /* цвет заголовков #2E2F42 */
 /* цвет акцент #4D5AE5 */
-
 :root {
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
   --accent-color: #4d5ae5;
 }
-
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
@@ -18,7 +16,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
 .container {
   width: 1152px;
 
@@ -30,28 +27,25 @@ body {
 
   outline: 3px solid green;
 }
-
 .list {
   margin: 0;
   padding: 0;
   
   list-style: none;
 }
-
 .link {
   text-decoration: none;
 }
-
 .logo {
   font-family: "Raleway", cursive;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.03em;
 }
-
 .btn {
   display: inline-block;
   border: 1px solid transparent;
+  cursor: pointer;
 
   font-weight: 500;
   font-size: 16px;
@@ -193,6 +187,30 @@ body {
   width: calc(100% / 4);
   margin-right: 24px;
 }
+.features-item::before {
+  display: block;
+  content: "";
+  height: 112px;
+  margin-bottom: 8px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: #F4F4FD;
+  border-radius: 4px;
+}
+.antenna::before {
+  background-image: url("../images/antenna.svg");
+}
+.clock::before {
+  background-image: url("../images/clock.svg");
+}
+.diagram::before {
+  background-image: url("../images/diagram.svg");
+}
+.astronaut::before {
+  background-image: url("../images/astronaut.svg");
+}
 .features-item:last-child {
   margin-right: 0;
 }
@@ -251,11 +269,10 @@ body {
   background-color: #fff;
 }
 .team-item .description {
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
 .team img {
   display: block;
-  margin-bottom: 32px;
 }
 .team-title-name {
   margin-top: 0;
@@ -263,7 +280,56 @@ body {
 }
 .team-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 8px;
+}
+.social-item::before {
+  background-color: #4D5AE5;
+}
+
+/* ----- Customers ----- */
+
+.customers {
+  text-align: center;
+}
+.customers-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-item {
+}
+.customers-item::before {
+  display: block;
+  content: "";
+  width: 168px;
+  height: 88px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+.client-logo-one::before{
+  background-image: url("../images/client1.svg");
+}
+.client-logo-two::before{
+  background-image: url("../images/client2.svg");
+}
+.client-logo-three::before{
+  background-image: url("../images/client3.svg");
+}
+.client-logo-four::before{
+  background-image: url("../images/client4.svg");
+}
+.client-logo-five::before{
+  background-image: url("../images/client5.svg");
+}
+.client-logo-six::before{
+  background-image: url("../images/client6.svg");
 }
 
 /* ----- Footer ----- */
@@ -273,6 +339,12 @@ body {
   padding-bottom: 100px;
   
   background-color: var(--title-text-color);
+}
+.footer .container {
+  display: flex;
+}
+.short-description {
+  margin-right: 120px;
 }
 .footer-logo {
   display: inline-block;
@@ -287,6 +359,46 @@ body {
 
   color: #e7e9fc;
 }
+.social-title {
+  margin-top: 0;
+
+  font-weight: 500;
+  color: #ffffff;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 16px;
+  align-items: center; */
+}
+.social-item::before {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid transparent;
+  border-radius: 40px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-color:  #4D5AE5;
+}
+.instagram::before {
+  background-image: url("../images/instagram.svg");
+}
+.twitter::before {
+  background-image: url("../images/twitter.svg");
+}
+.facebook::before {
+  background-image: url("../images/facebook.svg");
+}
+.linkedin::before {
+  background-image: url("../images/linkedin.svg");
+}
+
 
 /* +++++ Porfolio Style +++++ */
 
