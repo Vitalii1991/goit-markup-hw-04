@@ -197,7 +197,7 @@ body {
   background-position: center;
   background-size: 64px;
   background-color: #F4F4FD;
-  
+
   border-radius: 4px;
 }
 .antenna::before {
@@ -296,7 +296,7 @@ body {
   border: 1px solid transparent;
   border-radius: 50%;
 
-  background-size: 12px;
+  background-size: 16px;
   background-color: var(--accent-color);
   background-position: center;
   background-repeat: no-repeat;
