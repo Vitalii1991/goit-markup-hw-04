@@ -287,7 +287,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.social-item {
+.icon-instagram {
+  display: block;
+  width: 50px;
+  height: 50px;
+  fill: tomato;
+}
+
+/*.social-item {
   display: block;
   content: "";
   width: 40px;
@@ -312,7 +319,7 @@ body {
 }
 .linkedin {
   background-image: url("../images/linkedin.svg");
-}
+} */
 
 /* ----- Customers ----- */
 
