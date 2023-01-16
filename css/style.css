@@ -287,16 +287,20 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.social-list .icon{
+.social-link {
+  display: inline-block;
   width: 40px;
   height: 40px;
-  fill: tomato;
+  padding: 10px;
 
-  /* border: 1px solid transparent;
+  border: 1px solid transparent;
   border-radius: 50%;
 
-  background-size: 40px;
-  background-color: var(--accent-color); */
+  background-color: var(--accent-color);
+}
+.social-list .icon{
+  width: 16px;
+  height: 16px;
 }
 
 /* ----- Customers ----- */
@@ -378,14 +382,17 @@ body {
   color: #ffffff;
   font-weight: 500;
 }
-.footer-social-list {
-  display: flex;
-  gap: 16px;
+.social-network {
+  width: 208px;
 }
-.footer-social-list > .social-item {
+.social-network .social-link {
+  padding: 7px;
   background-color: rgba(255, 255, 255, 0.1);
 }
-
+.social-network .icon {
+  width: 24px;
+  height: 24px;
+}
 
 /* +++++ Porfolio Style +++++ */
 
