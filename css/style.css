@@ -285,13 +285,13 @@ body {
 }
 .social-list {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
 }
 .social-link {
   display: block;
   width: 40px;
   height: 40px;
-  padding: 10px;
+  padding-top: 10px;
 
   border: 1px solid transparent;
   border-radius: 50%;
@@ -312,37 +312,26 @@ body {
   display: flex;
   gap: 24px;
 }
-.customers-item {
-}
-.customers-item::before {
+.customers-link {
   display: block;
-  content: "";
   width: 168px;
   height: 88px;
-
-  background-repeat: no-repeat;
-  background-position: center;
+  /* padding-top: 23px; */
 
   border: 1px solid #8E8F99;
   border-radius: 4px;
 }
-.client-logo-one::before{
-  background-image: url("../images/client1.svg");
+.customers-link.logo-one,
+.customers-link.logo-five,
+.customers-link.logo-six {
+  padding-top: 23px;
 }
-.client-logo-two::before{
-  background-image: url("../images/client2.svg");
+.customers-link.logo-two {
+  padding-top: 19px;
 }
-.client-logo-three::before{
-  background-image: url("../images/client3.svg");
-}
-.client-logo-four::before{
-  background-image: url("../images/client4.svg");
-}
-.client-logo-five::before{
-  background-image: url("../images/client5.svg");
-}
-.client-logo-six::before{
-  background-image: url("../images/client6.svg");
+.customers-link.logo-three,
+.customers-link.logo-four {
+  padding-top: 25px;
 }
 
 /* ----- Footer ----- */
@@ -381,8 +370,11 @@ body {
   color: #ffffff;
   font-weight: 500;
 }
+.social-list {
+  text-align: center;
+}
 .social-network .social-link {
-  padding: 20%;
+  padding-top: 8px;
 
   background-color: rgba(255, 255, 255, 0.1);
 }
