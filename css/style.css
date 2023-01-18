@@ -309,11 +309,22 @@ body {
   display: flex;
   width: 168px;
   height: 88px;
+
   justify-content: center;
   align-items: center;
+  color: #8E8F99;
 
   border: 1px solid #8E8F99;
   border-radius: 4px;
+}
+.customers-link:hover,
+.customers-link:focus {
+  color: #404BBF;
+
+  border: 1px solid #404BBF;
+}
+.customers-link > svg {
+  fill: currentColor;
 }
 
 /* ----- Footer ----- */
