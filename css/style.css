@@ -187,8 +187,7 @@ body {
 .features-item {
   width: calc(100% / 4);
 }
-.features-link {
-  display: block;
+.features-icon {
   width: 264px;
   height: 112px;
   padding-top: 24px;
