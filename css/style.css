@@ -192,13 +192,14 @@ body {
   width: calc(100% / 4);
 }
 .features-icon {
+  display: flex;
   width: 264px;
   height: 112px;
-  padding-top: 24px;
   margin-bottom: 8px;
 
-  text-align: center;
-
+  justify-content: center;
+  align-items: center;
+  
   background-color: #F4F4FD;
   border-radius: 4px;
 }
@@ -275,10 +276,11 @@ body {
   gap: 24px;
 }
 .social-link {
-  display: block;
+  display: flex;
   width: 40px;
   height: 40px;
-  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
 
   border: 1px solid transparent;
   border-radius: 50%;
@@ -304,25 +306,14 @@ body {
   gap: 24px;
 }
 .customers-link {
-  display: block;
+  display: flex;
   width: 168px;
   height: 88px;
-  /* padding-top: 23px; */
+  justify-content: center;
+  align-items: center;
 
   border: 1px solid #8E8F99;
   border-radius: 4px;
-}
-.customers-link.logo-one,
-.customers-link.logo-five,
-.customers-link.logo-six {
-  padding-top: 23px;
-}
-.customers-link.logo-two {
-  padding-top: 19px;
-}
-.customers-link.logo-three,
-.customers-link.logo-four {
-  padding-top: 25px;
 }
 
 /* ----- Footer ----- */
@@ -361,12 +352,7 @@ body {
   color: #ffffff;
   font-weight: 500;
 }
-.social-list {
-  text-align: center;
-}
 .social-network .social-link {
-  padding-top: 8px;
-
   background-color: rgba(255, 255, 255, 0.1);
 }
 .social-network .social-link:hover,
