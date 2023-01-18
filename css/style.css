@@ -279,6 +279,7 @@ body {
   display: flex;
   width: 40px;
   height: 40px;
+  
   justify-content: center;
   align-items: center;
 
