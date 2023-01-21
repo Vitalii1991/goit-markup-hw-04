@@ -1,10 +1,12 @@
 /* основной цвет текста #434455 */
 /* цвет заголовков #2E2F42 */
 /* цвет акцент #4D5AE5 */
+/* цвет выделения #404BBF */
 :root {
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
   --accent-color: #4d5ae5;
+  --selection-color: #404BBF;
 }
 body {
   background-color: #ffffff;
@@ -163,7 +165,7 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404BBF;
+  background-color: var(--selection-color);
 }
 
 /* ----- Features ----- */
@@ -290,7 +292,7 @@ body {
 }
 .social-link:hover,
 .social-link:focus {
-  background-color: #404BBF;
+  background-color: var(--selection-color);
 }
 
 /* ----- Customers ----- */
@@ -320,9 +322,9 @@ body {
 }
 .customers-link:hover,
 .customers-link:focus {
-  color: #404BBF;
+  color: var(--selection-color);
 
-  border: 1px solid #404BBF;
+  border-color: var(--selection-color);
 }
 .customers-link > svg {
   fill: currentColor;
